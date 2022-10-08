@@ -1,6 +1,8 @@
-<div class="tracker-head"></div>
-<div class="tracker-body">
-    <h3>Work <img class="setting" src="/assets/icon-ellipsis.svg"></h3>
-    <h1>32Hrs</h1>
-    <p>Last Week - 5hrs</p>
-</div>
+    <div class="tracker-head" style="background-image: url('{{image}}'); background-color: hsl({{color}}); "></div>
+    <div class="tracker-body">
+        <h3>{{title}} <img class="setting" src="/assets/icon-ellipsis.svg"></h3>
+        <div class="hour-container">
+            <h1>{{hours}}</h1>
+            <p>{{previous}}</p>
+        </div>
+    </div>

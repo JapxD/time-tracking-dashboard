@@ -1,0 +1,167 @@
+.background{
+    min-width: 240px;
+    min-height: 100vh;
+    background-color: hsl(226, 43%, 10%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard{
+    width: min(95%, 80rem);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.grid-row-span-2{
+    grid-row: span 2;
+}
+
+.dashboard ::ng-deep app-report-for > .report-head > .name-container > p{
+    margin-top: 2rem;
+}
+
+@media (max-width: 1270px) {
+    .dashboard ::ng-deep app-time-tracking > .tracker-body > .hour-container{
+        display: block;
+    }
+    
+    .dashboard ::ng-deep app-report-for > .report-head > .name-container > h1 > span{
+        display: block;
+    }
+
+    .dashboard ::ng-deep app-report-for > .report-body{
+        height: 8.5rem;
+        display: block;
+        padding-top: 16px;
+    }
+
+    .dashboard ::ng-deep app-report-for > .report-body > p{
+        margin: 1.5rem 1rem 1.5rem 1rem;
+    }
+
+}
+
+@media (max-width: 1040px) {
+    .dashboard{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .dashboard ::ng-deep app-time-tracking > .tracker-body > .hour-container{
+        display: flex;
+    }
+
+    .dashboard ::ng-deep app-report-for > .report-head > .name-container > h1 > span{
+        display: inline;
+    }
+
+    .dashboard ::ng-deep app-report-for > .report-body{
+        height: 5.1rem;
+        display: flex;
+        padding-top: 26px;
+    }
+
+    .dashboard ::ng-deep app-report-for > .report-body > p{
+        margin: 0;
+    }
+}
+
+@media (max-width: 960px) {
+    .dashboard ::ng-deep app-time-tracking > .tracker-body > .hour-container{
+        display: block;
+    }
+
+    .dashboard ::ng-deep app-report-for > .report-head > .name-container > h1 > span{
+        display: block;
+    }
+
+    .dashboard ::ng-deep app-report-for > .report-body{
+        height: 7.9rem;
+        display: block;
+    }
+
+    .dashboard ::ng-deep app-report-for > .report-body > p{
+        margin: 1.5rem 1rem 1.5rem 1rem;
+    }
+}
+
+@media (max-width: 780px) {
+    .dashboard{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .dashboard ::ng-deep app-time-tracking > .tracker-body > .hour-container{
+        display: flex;
+    }
+    
+    .dashboard ::ng-deep app-report-for > .report-head > .name-container > h1 > span{
+        display: inline;
+    }
+
+    .dashboard ::ng-deep app-report-for > .report-body{
+        height: 5.1rem;
+        display: flex;
+    }
+
+    .dashboard ::ng-deep app-report-for > .report-body > p{
+        margin: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .dashboard ::ng-deep app-time-tracking > .tracker-body > .hour-container{
+        display: block;
+    }
+    
+    .dashboard ::ng-deep app-report-for > .report-head > .name-container > h1 > span{
+        display: block;
+    }
+
+    .dashboard ::ng-deep app-report-for > .report-body{
+        height: 7.9rem;
+        display: block;
+    }
+
+    .dashboard ::ng-deep app-report-for > .report-body > p{
+        margin: 1.5rem 1rem 1.5rem 1rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .dashboard{
+        grid-template-columns: repeat(1, 1fr);
+    }  
+    
+    .dashboard ::ng-deep app-time-tracking > .tracker-body > .hour-container{
+        display: flex;
+    }
+
+    .dashboard ::ng-deep app-report-for > .report-head{
+        display: flex;
+        height: 1rem;
+        padding: 4rem 1rem 4rem 1rem;
+    }
+
+    .dashboard ::ng-deep app-report-for > .report-head > .name-container > p{
+        margin: 0 0 .5rem 0;
+        margin-top: 0;
+    }
+
+    .dashboard ::ng-deep app-report-for > .report-head > .name-container > h1{
+        font-size: 1.5rem;
+    }
+
+    .dashboard ::ng-deep app-report-for > .report-head > .name-container > h1 > span{
+        display: inline;
+    }
+
+    .dashboard ::ng-deep app-report-for > .report-body{
+        height: 1.8rem;
+        display: flex;
+    }
+
+    .dashboard ::ng-deep app-report-for > .report-body > p{
+        margin: 0;
+    }
+}

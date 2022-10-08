@@ -1,1 +1,11 @@
-<app-time-tracking></app-time-tracking>
+<div class="background">
+    <div class="dashboard"> 
+        <app-report-for class="grid-row-span-2"></app-report-for>
+        <app-time-tracking *ngFor="let tracker of trackers"
+        [title]="tracker.title"
+        [image]="tracker.image"
+        [hours]="tracker.hours"
+        [previous]="tracker.previous"
+        [color]="tracker.color"></app-time-tracking>
+    </div>
+</div>

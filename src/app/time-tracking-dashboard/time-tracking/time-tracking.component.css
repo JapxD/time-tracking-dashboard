@@ -1,36 +1,23 @@
 .tracker-head{
-    width: 13.6rem;
-    height: 13.6rem;
-    border-radius: 5%;
-    background-color: hsl(15, 100%, 70%);
-    position: absolute;
+    position: relative;
+    min-width: 11rem;
+    min-height: 1rem;
+    padding: 1rem 1.3rem 1rem 1.3rem;
+    border-radius: 15px 15px 0 0;
     z-index: 1;
-    background-image: url("/assets/icon-work.svg");
     background-repeat: no-repeat;
     background-position: top -12px right 15px; 
-    background-size: 35%;
+    background-size: 5rem;
 }
 
 .tracker-body{
-    width: 11rem;
-    margin-top: 2.6rem;
-    border-radius: 5%;
+    min-width: 11rem;
+    border-radius: 15px;
     padding: 1rem 1.3rem 1rem 1.3rem;
     background-color: hsl(235, 46%, 20%);
     color: #fff;
-    position: absolute;
-    z-index: 2;
-    font-family: 'Rubik', sans-serif;
-}
-
-.tracker-body{
-    width: 11rem;
-    margin-top: 2.6rem;
-    border-radius: 5%;
-    padding: 1rem 1.3rem 1rem 1.3rem;
-    background-color: hsl(235, 46%, 20%);
-    color: #fff;
-    position: absolute;
+    position: relative;
+    top: -10px;
     z-index: 2;
     font-family: 'Rubik', sans-serif;
 }
@@ -52,22 +39,27 @@
     cursor: pointer;
 }
 
+.hour-container{
+    display: flex;
+}
+
 h1{
     font-weight: 300;
     font-size: 3rem;
-    margin-bottom: -5px;
+    margin: 0;
 }
 
 p{
     font-weight: 300;
     font-size: .8rem;
+    margin-left: auto;
+    align-self: center;
 }
 
 h3{
     display: flex;
     font-weight: 400;
     font-size: 1rem;
-    margin-bottom: -10px;
 }
 
 .setting{

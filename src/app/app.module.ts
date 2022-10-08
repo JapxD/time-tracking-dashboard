@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ReportFor } from './time-tracking-dashboard/report-for/report-for.component';
 import { TimeTrackingDashboardComponent } from './time-tracking-dashboard/time-tracking-dashboard.component';
 import { TimeTrackingComponent } from './time-tracking-dashboard/time-tracking/time-tracking.component';
 
@@ -10,7 +11,8 @@ import { TimeTrackingComponent } from './time-tracking-dashboard/time-tracking/t
   declarations: [
     AppComponent,
     TimeTrackingDashboardComponent,
-    TimeTrackingComponent
+    TimeTrackingComponent,
+    ReportFor
   ],
   imports: [
     BrowserModule,
